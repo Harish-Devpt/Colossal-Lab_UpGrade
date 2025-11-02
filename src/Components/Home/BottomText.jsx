@@ -24,7 +24,7 @@ const BottomText = () => {
       ref={bottomRef}
       className="
         text-amber-50 font-[font2]
-        flex justify-center items-center gap-10
+        flex justify-center items-center gap-5 md:gap-10
         flex-wrap
         px-2 sm:px-4 md:px-8
       "
@@ -36,6 +36,8 @@ const BottomText = () => {
           rounded-full uppercase transition-all duration-300
           px-3 sm:px-4 md:px-5 pt-2 sm:pt-2
           leading-[6vw] sm:leading-[5vw] md:leading-[4.5vw]
+      
+     
         "
       >
         <Link
@@ -53,8 +55,10 @@ const BottomText = () => {
         className="
           flex items-center border-3 border-amber-50 hover:border-green-400 hover:text-green-400
           rounded-full uppercase transition-all duration-300
-          px-3 sm:px-4 md:px-5 pt-1 sm:pt-2
+          px-3 sm:px-4 md:px-5 pt-2 sm:pt-2
           leading-[6vw] sm:leading-[5vw] md:leading-[4.5vw]
+           
+          
         "
       >
         <Link

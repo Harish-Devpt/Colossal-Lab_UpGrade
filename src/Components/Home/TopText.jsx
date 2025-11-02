@@ -123,7 +123,7 @@ const TopText = () => {
         </span>
 
         <svg
-          className="absolute left-[22vw] top-2 w-[52vw] h-[8vw] scale-x-[-1]"
+          className="absolute left-[25vw] md:left-[22vw] -top-0.1 md:top-2 w-[52vw] h-[8vw] scale-x-[-1]"
           viewBox="0 0 520 80"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +135,7 @@ const TopText = () => {
             width="516"
             height="76"
             rx="500"
-            stroke="#FDE68A"
+            stroke="#AFFBB2"
             strokeWidth="2"
           />
         </svg>

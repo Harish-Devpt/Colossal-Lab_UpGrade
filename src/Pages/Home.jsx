@@ -10,7 +10,7 @@ const Home = () => {
   const overlayRef = useRef(null);
 
   useEffect(() => {
-    document.title = "Home";
+    document.title = "Home ";
     // Zoom in → out animation for overlay content (optional)
     gsap.fromTo(
       overlayRef.current,
@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       {/* Background video */}
-      <div className="w-full h-screen fixed top-0 left-0">
+      <div className="w-full h-screen fixed top-0 left-0 overflow-y-hidden">
         <Video />
 
         {/* Permanent blur overlay layer */}
@@ -51,9 +51,11 @@ const Home = () => {
         {/* Time Component */}
         <div className="absolute left-[1.8vw] bottom-[1vw] text-white">
           <Time className="text-[1.5vw]" locationName="AUSTIN_" />
-        </div>
+        </div >
 
-        <BottomText />
+      <div className="pb-[20vw] md:pb-0">
+          <BottomText />
+      </div>
       </div>
     </div>
   );

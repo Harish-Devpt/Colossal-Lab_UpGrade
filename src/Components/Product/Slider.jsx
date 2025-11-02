@@ -108,7 +108,7 @@ const Slider = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="flex gap-[10vw] -ml-[3vw] -mt-5 md:mt-5"
+            className="flex gap-[10vw] ml-[4vw] md:-ml-[3vw] -mt-10 md:mt-5"
           >
             {[
               {
@@ -150,7 +150,7 @@ const Slider = () => {
                 <motion.img
                   src={icon.src}
                   alt={icon.name}
-                  className={`w-14 h-14 opacity-80 group-hover:opacity-100 transition-all duration-300 rounded-2xl ${
+                  className={`w-15 md:w-14 h-10 md:h-14 opacity-80 group-hover:opacity-100 transition-all duration-300 rounded-none md:rounded-2xl ${
                     icon.forceWhite ? "invert brightness-200" : ""
                   }`}
                   animate={{ y: [0, -6, 0] }}
@@ -165,7 +165,7 @@ const Slider = () => {
           </motion.div>
 
           {/* Bottom Line */}
-          <div className="absolute bottom-[2vw] left-1/2 -translate-x-1/2 w-full flex flex-wrap items-center justify-center gap-16 text-gray-400 text-[1.8vw] md:text-[1vw] uppercase tracking-wide text-center">
+          <div className="absolute bottom-[2vw] md:bottom-[2vw] left-1/2 -translate-x-1/2 w-full flex flex-wrap md:flex-wrap items-center justify-center gap-[5vw] md:gap-16 text-gray-400 text-[1.8vw] md:text-[1vw] uppercase tracking-wide text-center">
             {[
               { label: "Terms of Use", link: "https://colossal.com/terms-of-use/" },
               { label: "Careers at Colossal", link: "https://colossal.com/careers/" },
@@ -236,7 +236,7 @@ const Slider = () => {
       {/* 🔥 Pinned Heading */}
       <h1
         ref={headingRef}
-        className="absolute top-[10vw] md:top-[2.5vw] left-[20vw] md:left-[41vw] -translate-x-1/2 font-[font1] text-[7vw] md:text-[2vw] uppercase select-none pointer-events-none"
+        className="absolute top-[10vw] md:top-[2.5vw] left-[24vw] md:left-[41vw] -translate-x-1/2 font-[font1] text-[7vw] md:text-[2vw] uppercase select-none pointer-events-none"
         style={{
           color: "#ff0000",
           textShadow: "0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.5)",
