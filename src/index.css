@@ -18,19 +18,19 @@
     src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Borel&family=Croissant+One&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Emilys+Candy&family=Instrument+Serif:ital@0;1&family=PT+Serif+Caption&family=Pattaya&family=Pinyon+Script&family=Spline+Sans:wght@300..700&family=UnifrakturMaguntia&family=Vollkorn:ital,wght@0,800;1,800&family=WDXL+Lubrifont+SC&display=swap');;
 }
 
-/* Disable text selection & copying sitewide */
-* {
-  user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+
+*{
+    user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
 
-/* Optional: disable drag for images/videos too */
-img, video {
-  pointer-events: none;
-  -webkit-user-drag: none;
+img,
+video {
+  pointer-events: none !important;
+  -webkit-user-drag: none !important;
 }
-
 
 
 .movelink {
